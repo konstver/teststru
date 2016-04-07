@@ -19,6 +19,9 @@ Next place files index.php, functions.inc and settings.conf into Apache
 web folder. For Ex.: in Debian GNU/Linux v8 it will be /var/www/http/.
 Read the manual for you operation system and Apache version for more.
 
+Edit file settings.conf and write theare correct information about login
+and paasword for MySQL connect.
+
 After this, if Apache and MySQL are on, you can test application using
 link http://localhost/index.php
 
