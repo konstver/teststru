@@ -1,0 +1,30 @@
+This is the testing task for tree-structure operations.
+
+To use this apps you need to have installed:
+	- Apache2 whith libapache-mod-php5 (tested on Apache2 v. 2.4.10)
+	- MySQL server (tested on version 5.5.5)
+	- PHP5 (tested on version 5.6.19)
+
+Instalation instructions
+------------------------
+
+First you need to create empty database on your MySQL-server.
+You need to have a login and password of the account with granted rights
+for database and tables creation.
+To create an empty database use next command:
+
+mysql -u<login> -p<password> < /path/to/packet/folder/createdatabase.sql
+
+Next place files index.php, functions.inc and settings.conf into Apache
+web folder. For Ex.: in Debian GNU/Linux v8 it will be /var/www/http/.
+Read the manual for you operation system and Apache version for more.
+
+After this, if Apache and MySQL are on, you can test application using
+link http://localhost/index.php
+
+To add first record use "+" url in the table header, column "Company".
+
+Every record has "+" - to add subcompanies and "X" - to del current 
+record with all it's "leaves".
+
+To edit record just click on the company name.
